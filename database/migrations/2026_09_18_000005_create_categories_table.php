@@ -16,7 +16,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->string('name', 100);
             $table->text('description')->nullable();
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
         });
     }
 

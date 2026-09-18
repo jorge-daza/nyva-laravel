@@ -14,7 +14,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->decimal('monthly_price', 12, 2);
             $table->decimal('annual_price', 12, 2);
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
         });
     }
 

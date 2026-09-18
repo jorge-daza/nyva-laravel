@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('day_of_week', 20);
             $table->time('opens_at');
             $table->time('closes_at');
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
         });
     }
 

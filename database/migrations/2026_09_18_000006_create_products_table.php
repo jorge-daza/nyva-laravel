@@ -18,8 +18,8 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->decimal('price', 12, 2);
             $table->string('image')->nullable();
-            $table->boolean('available');
-            $table->string('status', 30);
+            $table->boolean('available')->default(true);
+            $table->string('status', 30)->default('active');
         });
     }
 

@@ -16,7 +16,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->text('question');
             $table->text('answer');
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
         });
     }
 

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('billing_period', 20);
             $table->date('start_date');
             $table->date('end_date')->nullable();
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
         });
     }
 

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('customer_phone', 30);
             $table->string('delivery_address', 255);
             $table->decimal('total', 12, 2);
-            $table->string('status', 30);
+            $table->string('status', 30)->default('pending');
             $table->dateTime('ordered_at');
         });
     }

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('address', 255);
             $table->string('phone', 30);
             $table->string('email');
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
             $table->dateTime('registered_at');
         });
     }

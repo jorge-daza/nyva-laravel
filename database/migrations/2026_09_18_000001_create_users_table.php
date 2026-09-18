@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('role', 50);
-            $table->string('status', 30);
+            $table->string('status', 30)->default('active');
             $table->dateTime('registered_at');
         });
     }
