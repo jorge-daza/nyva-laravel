@@ -1,0 +1,35 @@
+NYVA - ACTIVIDAD 2 - PASOS EN WINDOWS / WAMPSERVER
+
+1) Abrir CMD o PowerShell dentro de la carpeta del proyecto.
+2) Verificar PHP:
+   php -v
+   Debe ser 8.3 o superior para Laravel 13.
+
+3) Instalar dependencias:
+   composer install
+
+4) Crear .env:
+   CMD:        copy .env.example .env
+   PowerShell: Copy-Item .env.example .env
+
+5) Generar APP_KEY:
+   php artisan key:generate
+
+6) Crear la base nyva en phpMyAdmin o ejecutar database/sql/create_database.sql.
+
+7) Editar .env con usuario y contraseña de MySQL.
+
+8) Ejecutar:
+   php artisan config:clear
+   php artisan migrate:fresh --seed
+   php artisan migrate:status
+
+9) Iniciar servidor:
+   php artisan serve
+
+10) Abrir la URL mostrada por Artisan, normalmente http://127.0.0.1:8000
+
+IMPORTANTE:
+- No subir .env a GitHub.
+- La contraseña SEED_DEMO_PASSWORD es únicamente para pruebas académicas.
+- vendor/ se genera con composer install y no debe subirse.
