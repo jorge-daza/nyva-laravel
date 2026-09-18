@@ -2,6 +2,10 @@
 
 Proyecto académico para implementar en Laravel el modelo de datos definido en la Actividad 1 de NYVA: **Asistente virtual para la Automatización de Atención al Cliente y Gestión de Pedidos**.
 
+Jorge Daza
+Jonatan Arrieta
+Jesus Carrillo
+
 ## Tecnología
 
 - PHP 8.3 o superior.
