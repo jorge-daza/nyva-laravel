@@ -14,7 +14,6 @@ Proyecto académico para implementar en Laravel el modelo de datos definido en l
 
 1. `Primera Actividad Formativa (1).pdf`: modelo de datos, entidades, atributos y cardinalidades.
 2. `Guia_Convenciones_Laravel.docx`: convenciones de nombres exigidas por el docente.
-3. Instrucciones de la Actividad 2 suministradas en el proyecto de ChatGPT.
 
 ## Entidades implementadas
 
